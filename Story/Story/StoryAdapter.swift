@@ -9,8 +9,11 @@
 import RIBs
 
 class StoryAdapter: Story, StoryBuildable, StoryListener {
-    let id = "story"
-    let name = "Story"
+    let id: String = "story"
+    let title: String = "Story"
+    var page: Int = 0
+    var pages: [Int: String] = [:]
+
     let storyBuilder: StoryBuilder
     var builder: StoryBuildable { return self }
     weak var storyListener: StoryListener?
@@ -19,12 +22,12 @@ class StoryAdapter: Story, StoryBuildable, StoryListener {
         storyBuilder = StoryBuilder(dependency: dependency)
     }
 
-    func build(withListener listener: StoryListener) -> ViewableRouting {
+    func build(withListener listener: StoryListener) -> StoryRouting {
         storyListener = listener
         return storyBuilder.build(withListener: self)
     }
 
-    func storyDidEnd(with rating: StoryRating?) {
-        storyListener?.storyDidEnd(with: rating)
+    func storyDidEnd() {
+        storyListener?.storyDidEnd()
     }
 }

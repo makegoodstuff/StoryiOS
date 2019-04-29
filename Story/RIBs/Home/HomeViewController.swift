@@ -33,7 +33,7 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
     }
 
     func show(storyView: ViewControllable) {
-        addChildViewController(storyView.uiviewController)
+        addChild(storyView.uiviewController)
         view.addSubview(storyView.uiviewController.view)
 
         storyView.uiviewController.view.snp.makeConstraints { (maker: ConstraintMaker) in
@@ -71,7 +71,7 @@ private extension HomeViewController {
     func buildStartButton(with story: Story, previousButton: UIView?) -> UIButton {
         let startButton = UIButton()
         view.addSubview(startButton)
-        startButton.accessibilityIdentifier = story.name
+        startButton.accessibilityIdentifier = story.title
         startButton.snp.makeConstraints { (maker: ConstraintMaker) in
             if let previousButton = previousButton {
                 maker.bottom.equalTo(previousButton.snp.top).offset(-20.0)
@@ -82,7 +82,7 @@ private extension HomeViewController {
             maker.height.equalTo(50.0)
         }
 
-        startButton.setTitle(story.name, for: .normal)
+        startButton.setTitle(story.title, for: .normal)
         startButton.setTitleColor(UIColor.white, for: .normal)
         startButton.backgroundColor = UIColor.black
         startButton.rx.tap

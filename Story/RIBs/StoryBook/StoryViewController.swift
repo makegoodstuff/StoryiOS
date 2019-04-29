@@ -1,5 +1,5 @@
 //
-//  StoryBookViewController.swift
+//  StoryViewController.swift
 //  Story
 //
 //  Created by Justin Kaufman on 4/29/19.
@@ -10,13 +10,13 @@ import RIBs
 import SnapKit
 import UIKit
 
-protocol StoryBookPresentableListener: class {
+protocol StoryPresentableListener: class {
     func goToNextPage()
     func goToPreviousPage()
 }
 
-final class StoryBookViewController: UIViewController, StoryBookViewControllable {
-    weak var listener: StoryBookPresentableListener?
+final class StoryViewController: UIViewController, StoryViewControllable {
+    weak var listener: StoryPresentableListener?
     private let textView: UITextView = UITextView()
 
     init() {
@@ -30,7 +30,7 @@ final class StoryBookViewController: UIViewController, StoryBookViewControllable
 
 // MARK: Private
 
-private extension StoryBookViewController {
+private extension StoryViewController {
     func setupSubviews() {
         view.backgroundColor = UIColor.lightGray
         view.addSubview(textView)
@@ -42,9 +42,9 @@ private extension StoryBookViewController {
     func setupLayout() {}
 }
 
-// MARK: StoryBookPresentable
+// MARK: StoryPresentable
 
-extension StoryBookViewController: StoryBookPresentable {
+extension StoryViewController: StoryPresentable {
     func setStoryText(_ text: String) {
         textView.text = text
     }

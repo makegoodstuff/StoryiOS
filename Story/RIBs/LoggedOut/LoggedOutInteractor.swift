@@ -48,9 +48,9 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
 
 // MARK: PresentableListener
 
-extension LoggedOutInteractor: LoggedOutPresentableListener
+extension LoggedOutInteractor: LoggedOutPresentableListener {
     func login(userName: String?) {
-        let userNameWithDefault = userName(userName, withDefaultName: "User")
+        let userNameWithDefault = self.userName(userName, withDefaultName: "User")
         listener?.didLogin(userName: userNameWithDefault)
     }
 }

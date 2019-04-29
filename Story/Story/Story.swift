@@ -8,17 +8,10 @@
 
 import RIBs
 
-public protocol StoryListener: class {
-    func storyDidEnd(with rating: StoryRating?)
-}
-
-public protocol StoryBuildable: Buildable {
-    func build(withListener listener: StoryListener) -> ViewableRouting
-}
-
-public protocol Story {
+protocol Story {
     var id: String { get }
-    var name: String { get }
-    var pages: Int { get }
+    var title: String { get }
+    var page: Int { get }
+    var pages: [Int: String] { get }
     var builder: StoryBuildable { get }
 }

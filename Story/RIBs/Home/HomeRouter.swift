@@ -8,7 +8,7 @@
 
 import RIBs
 
-protocol HomeInteractable: Interactable, BasicStoryListener {
+protocol HomeInteractable: Interactable, StoryListener {
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
@@ -18,11 +18,11 @@ protocol HomeViewControllable: ViewControllable {
 }
 
 final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable>, HomeRouting {
-    private var storyBuilder: BasicStoryBuildable
+    private var storyBuilder: StoryBuildable
 
     init(interactor: HomeInteractable,
          viewController: HomeViewControllable,
-         storyBuilder: BasicStoryBuildable) {
+         storyBuilder: StoryBuildable) {
         self.storyBuilder = storyBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self

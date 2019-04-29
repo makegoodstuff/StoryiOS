@@ -10,12 +10,10 @@ import RIBs
 
 public protocol HomeDependency: Dependency {
     var userName: String { get }
-    var storyStream: StoryStream { get }
 }
 
-final class HomeComponent: Component<HomeDependency>, BasicStoryDependency {
+final class HomeComponent: Component<HomeDependency>, StoryDependency {
     var userName: String { return dependency.userName }
-    var storyStream: StoryStream { return dependency.storyStream }
 }
 
 protocol HomeBuildable: Buildable {
@@ -33,7 +31,7 @@ final class HomeBuilder: Builder<HomeDependency>, HomeBuildable {
         let interactor = HomeInteractor(presenter: viewController)
         interactor.listener = listener
 
-        let storyBuilder = BasicStoryBuilder(dependency: component)
+        let storyBuilder = StoryBuilder(dependency: component)
         let router = HomeRouter(
             interactor: interactor,
             viewController: viewController,

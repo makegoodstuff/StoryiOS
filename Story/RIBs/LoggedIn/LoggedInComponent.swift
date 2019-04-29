@@ -8,6 +8,8 @@
 
 import Foundation
 import RIBs
+import RxCocoa
+import RxSwift
 
 protocol LoggedInDependency: Dependency {
     var loggedInViewController: LoggedInViewControllable { get }
@@ -16,21 +18,13 @@ protocol LoggedInDependency: Dependency {
 final class LoggedInComponent: Component<LoggedInDependency> {
     let userName: String
 
-    fileprivate var loggedInViewController: LoggedInViewControllable {
+    var loggedInViewController: LoggedInViewControllable {
         return dependency.loggedInViewController
     }
 
-    fileprivate var stories: [Story] {
-        return shared {
-            return [RandomStoryAdapter(dependency: self), StoryAdapter(dependency: self)]
-        }
+    var stories: [Story] {
+        return shared { return [StoryAdapter(dependency: self)] }
     }
-
-    var mutableStoryStream: MutableStoryStream {
-        return shared { StoryStreamImpl() }
-    }
-
-    var storyStream: StoryStream { return mutableStoryStream }
 
     init(dependency: LoggedInDependency, userName: String) {
         self.userName = userName

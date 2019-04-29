@@ -13,8 +13,8 @@ import RxSwift
 
 protocol LoggedInRouting: Routing {
     func cleanupViews()
-    func routeToStory(with storys: [Story])
-    func routeToStory(with storyBuilder: StoryBuildable)
+    func routeToHome(with stories: [Story])
+    func routeToStory(with story: StoryBuildable)
 }
 
 // MARK: Listener
@@ -58,6 +58,10 @@ extension LoggedInInteractor {
 
         return Observable.just((self, ()))
     }
+
+    func routeToStory(with story: StoryBuildable) {
+
+    }
 }
 
 // MARK: HomeListener
@@ -70,8 +74,8 @@ extension LoggedInInteractor {
 
 // MARK: StoryListener
 
-extension LoggedInInteractor
-    func storyDidEnd(with rating: StoryRating?) {
+extension LoggedInInteractor {
+    func storyDidEnd() {
         router?.routeToHome(with: stories)
     }
 }

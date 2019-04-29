@@ -28,7 +28,7 @@ public class LaunchStoryWorkflow: Workflow<RootActionableItem> {
     private func parseStoryId(from url: URL) -> String? {
         let components = URLComponents(string: url.absoluteString)
         let items = components?.queryItems ?? []
-        guard let item = items.filter(where: { $0.name == "storyId" }).first else { return nil }
+        guard let item = items.filter({ $0.name == "storyId" }).first else { return nil }
         return item.value
     }
 }

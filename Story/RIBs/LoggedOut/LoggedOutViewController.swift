@@ -52,7 +52,7 @@ private extension LoggedOutViewController {
 private extension LoggedOutViewController {
     func buildUserField() -> UITextField {
         let userField = UITextField()
-        userField.borderStyle = UITextBorderStyle.line
+        userField.borderStyle = UITextField.BorderStyle.line
         view.addSubview(userField)
         userField.placeholder = "User name"
         userField.snp.makeConstraints { (maker: ConstraintMaker) in
@@ -68,7 +68,7 @@ private extension LoggedOutViewController {
         view.addSubview(loginButton)
 
         loginButton.snp.makeConstraints { (maker: ConstraintMaker) in
-            maker.top.equalTo(player2Field.snp.bottom).offset(20.0)
+            maker.top.equalTo(userField.snp.bottom).offset(20.0)
             maker.left.right.height.equalTo(userField)
         }
 

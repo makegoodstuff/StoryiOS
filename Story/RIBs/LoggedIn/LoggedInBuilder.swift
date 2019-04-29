@@ -9,7 +9,7 @@
 import RIBs
 
 protocol LoggedInBuildable: Buildable {
-    func build(withListener listener: LoggedInListener, user1Name: String) -> (router: LoggedInRouting, actionableItem: LoggedInActionableItem)
+    func build(withListener listener: LoggedInListener, userName: String) -> (router: LoggedInRouting, actionableItem: LoggedInActionableItem)
 }
 
 final class LoggedInBuilder: Builder<LoggedInDependency>, LoggedInBuildable {

@@ -35,6 +35,8 @@ final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteract
     override func willResignActive() {
         super.willResignActive()
     }
+
+    func storyDidEnd() {}
 }
 
 // MARK: HomePresentableListener

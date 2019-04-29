@@ -25,12 +25,11 @@
 		D03A8C4C2277664E00A8B39D /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C482277664E00A8B39D /* HomeBuilder.swift */; };
 		D03A8C4D2277664E00A8B39D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C492277664E00A8B39D /* HomeRouter.swift */; };
 		D03A8C5622776FC600A8B39D /* StoryRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5522776FC600A8B39D /* StoryRating.swift */; };
-		D03A8C5822776FD200A8B39D /* StoryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5722776FD200A8B39D /* StoryStream.swift */; };
-		D03A8C632277761000A8B39D /* StoryBookBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5A2277715A00A8B39D /* StoryBookBuilder.swift */; };
-		D03A8C642277761000A8B39D /* StoryBookComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5D2277743800A8B39D /* StoryBookComponent.swift */; };
-		D03A8C652277761000A8B39D /* StoryBookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5B2277715A00A8B39D /* StoryBookInteractor.swift */; };
-		D03A8C662277761000A8B39D /* StoryBookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C592277715A00A8B39D /* StoryBookRouter.swift */; };
-		D03A8C672277761000A8B39D /* StoryBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5C2277715A00A8B39D /* StoryBookViewController.swift */; };
+		D03A8C632277761000A8B39D /* StoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5A2277715A00A8B39D /* StoryBuilder.swift */; };
+		D03A8C642277761000A8B39D /* StoryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5D2277743800A8B39D /* StoryComponent.swift */; };
+		D03A8C652277761000A8B39D /* StoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5B2277715A00A8B39D /* StoryInteractor.swift */; };
+		D03A8C662277761000A8B39D /* StoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C592277715A00A8B39D /* StoryRouter.swift */; };
+		D03A8C672277761000A8B39D /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5C2277715A00A8B39D /* StoryViewController.swift */; };
 		D03A8C6C2277761600A8B39D /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5022776D7A00A8B39D /* LoggedOutBuilder.swift */; };
 		D03A8C6D2277761600A8B39D /* LoggedOutComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C5222776EBA00A8B39D /* LoggedOutComponent.swift */; };
 		D03A8C6E2277761600A8B39D /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C4F22776D7A00A8B39D /* LoggedOutInteractor.swift */; };
@@ -38,7 +37,6 @@
 		D03A8C702277761600A8B39D /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C4E22776D7A00A8B39D /* LoggedOutViewController.swift */; };
 		D03A8C712277761900A8B39D /* LoggedInComponent+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C312277600300A8B39D /* LoggedInComponent+Home.swift */; };
 		D03A8C722277761900A8B39D /* LoggedInComponent+Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C372277600300A8B39D /* LoggedInComponent+Story.swift */; };
-		D03A8C732277761900A8B39D /* LoggedInComponent+RandomStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C382277600300A8B39D /* LoggedInComponent+RandomStory.swift */; };
 		D03A8C742277761B00A8B39D /* LoggedInActionableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C3A227761A000A8B39D /* LoggedInActionableItem.swift */; };
 		D03A8C782277762000A8B39D /* LoggedInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C302277600300A8B39D /* LoggedInBuilder.swift */; };
 		D03A8C792277762000A8B39D /* LoggedInComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C412277630F00A8B39D /* LoggedInComponent.swift */; };
@@ -46,9 +44,36 @@
 		D03A8C7B2277762000A8B39D /* LoggedInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C332277600300A8B39D /* LoggedInRouter.swift */; };
 		D03A8C7C2277762C00A8B39D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C322277600300A8B39D /* Story.swift */; };
 		D03A8C7D2277762C00A8B39D /* StoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C352277600300A8B39D /* StoryAdapter.swift */; };
-		D03A8C7E2277762C00A8B39D /* RandomStoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C342277600300A8B39D /* RandomStoryAdapter.swift */; };
 		D03A8C7F2277763900A8B39D /* LaunchStoryWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A8C2722775DA100A8B39D /* LaunchStoryWorkflow.swift */; };
+		D03A8C8B22777BB700A8B39D /* NeedleFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8422777BA500A8B39D /* NeedleFoundation.framework */; };
+		D03A8C8C22777BB700A8B39D /* NeedleFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8422777BA500A8B39D /* NeedleFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D03A8C8D22777BB700A8B39D /* RIBs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8522777BA500A8B39D /* RIBs.framework */; };
+		D03A8C8E22777BB700A8B39D /* RIBs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8522777BA500A8B39D /* RIBs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D03A8C8F22777BB700A8B39D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8322777BA500A8B39D /* RxCocoa.framework */; };
+		D03A8C9022777BB700A8B39D /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8322777BA500A8B39D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D03A8C9122777BB700A8B39D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8122777BA500A8B39D /* RxSwift.framework */; };
+		D03A8C9222777BB700A8B39D /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8122777BA500A8B39D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D03A8C9322777BB700A8B39D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8222777BA500A8B39D /* SnapKit.framework */; };
+		D03A8C9422777BB700A8B39D /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03A8C8222777BA500A8B39D /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D03A8C9522777BB700A8B39D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D03A8C9222777BB700A8B39D /* RxSwift.framework in Embed Frameworks */,
+				D03A8C9022777BB700A8B39D /* RxCocoa.framework in Embed Frameworks */,
+				D03A8C8E22777BB700A8B39D /* RIBs.framework in Embed Frameworks */,
+				D03A8C8C22777BB700A8B39D /* NeedleFoundation.framework in Embed Frameworks */,
+				D03A8C9422777BB700A8B39D /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D03A8BFB2277578C00A8B39D /* Story.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Story.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,11 +94,9 @@
 		D03A8C312277600300A8B39D /* LoggedInComponent+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+Home.swift"; sourceTree = "<group>"; };
 		D03A8C322277600300A8B39D /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		D03A8C332277600300A8B39D /* LoggedInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInRouter.swift; sourceTree = "<group>"; };
-		D03A8C342277600300A8B39D /* RandomStoryAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomStoryAdapter.swift; sourceTree = "<group>"; };
 		D03A8C352277600300A8B39D /* StoryAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryAdapter.swift; sourceTree = "<group>"; };
 		D03A8C362277600300A8B39D /* LoggedInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInInteractor.swift; sourceTree = "<group>"; };
 		D03A8C372277600300A8B39D /* LoggedInComponent+Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+Story.swift"; sourceTree = "<group>"; };
-		D03A8C382277600300A8B39D /* LoggedInComponent+RandomStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+RandomStory.swift"; sourceTree = "<group>"; };
 		D03A8C3A227761A000A8B39D /* LoggedInActionableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInActionableItem.swift; sourceTree = "<group>"; };
 		D03A8C3B227761A200A8B39D /* RootActionableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootActionableItem.swift; sourceTree = "<group>"; };
 		D03A8C3E2277625300A8B39D /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
@@ -88,12 +111,16 @@
 		D03A8C5122776D7A00A8B39D /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
 		D03A8C5222776EBA00A8B39D /* LoggedOutComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutComponent.swift; sourceTree = "<group>"; };
 		D03A8C5522776FC600A8B39D /* StoryRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRating.swift; sourceTree = "<group>"; };
-		D03A8C5722776FD200A8B39D /* StoryStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryStream.swift; sourceTree = "<group>"; };
-		D03A8C592277715A00A8B39D /* StoryBookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBookRouter.swift; sourceTree = "<group>"; };
-		D03A8C5A2277715A00A8B39D /* StoryBookBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBookBuilder.swift; sourceTree = "<group>"; };
-		D03A8C5B2277715A00A8B39D /* StoryBookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBookInteractor.swift; sourceTree = "<group>"; };
-		D03A8C5C2277715A00A8B39D /* StoryBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBookViewController.swift; sourceTree = "<group>"; };
-		D03A8C5D2277743800A8B39D /* StoryBookComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBookComponent.swift; sourceTree = "<group>"; };
+		D03A8C592277715A00A8B39D /* StoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRouter.swift; sourceTree = "<group>"; };
+		D03A8C5A2277715A00A8B39D /* StoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBuilder.swift; sourceTree = "<group>"; };
+		D03A8C5B2277715A00A8B39D /* StoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryInteractor.swift; sourceTree = "<group>"; };
+		D03A8C5C2277715A00A8B39D /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		D03A8C5D2277743800A8B39D /* StoryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryComponent.swift; sourceTree = "<group>"; };
+		D03A8C8122777BA500A8B39D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		D03A8C8222777BA500A8B39D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		D03A8C8322777BA500A8B39D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		D03A8C8422777BA500A8B39D /* NeedleFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NeedleFoundation.framework; path = Carthage/Build/iOS/NeedleFoundation.framework; sourceTree = SOURCE_ROOT; };
+		D03A8C8522777BA500A8B39D /* RIBs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RIBs.framework; path = Carthage/Build/iOS/RIBs.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +128,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03A8C9122777BB700A8B39D /* RxSwift.framework in Frameworks */,
+				D03A8C8F22777BB700A8B39D /* RxCocoa.framework in Frameworks */,
+				D03A8C8D22777BB700A8B39D /* RIBs.framework in Frameworks */,
+				D03A8C8B22777BB700A8B39D /* NeedleFoundation.framework in Frameworks */,
+				D03A8C9322777BB700A8B39D /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D03A8BFD2277578C00A8B39D /* Story */,
+				D03A8C8022777B9500A8B39D /* Frameworks */,
 				D03A8BFC2277578C00A8B39D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -226,11 +259,11 @@
 		D03A8C2F22775FD800A8B39D /* StoryBook */ = {
 			isa = PBXGroup;
 			children = (
-				D03A8C5A2277715A00A8B39D /* StoryBookBuilder.swift */,
-				D03A8C5D2277743800A8B39D /* StoryBookComponent.swift */,
-				D03A8C5B2277715A00A8B39D /* StoryBookInteractor.swift */,
-				D03A8C592277715A00A8B39D /* StoryBookRouter.swift */,
-				D03A8C5C2277715A00A8B39D /* StoryBookViewController.swift */,
+				D03A8C5A2277715A00A8B39D /* StoryBuilder.swift */,
+				D03A8C5D2277743800A8B39D /* StoryComponent.swift */,
+				D03A8C5B2277715A00A8B39D /* StoryInteractor.swift */,
+				D03A8C592277715A00A8B39D /* StoryRouter.swift */,
+				D03A8C5C2277715A00A8B39D /* StoryViewController.swift */,
 			);
 			path = StoryBook;
 			sourceTree = "<group>";
@@ -240,7 +273,6 @@
 			children = (
 				D03A8C322277600300A8B39D /* Story.swift */,
 				D03A8C352277600300A8B39D /* StoryAdapter.swift */,
-				D03A8C342277600300A8B39D /* RandomStoryAdapter.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -267,7 +299,6 @@
 			children = (
 				D03A8C312277600300A8B39D /* LoggedInComponent+Home.swift */,
 				D03A8C372277600300A8B39D /* LoggedInComponent+Story.swift */,
-				D03A8C382277600300A8B39D /* LoggedInComponent+RandomStory.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -295,9 +326,20 @@
 			isa = PBXGroup;
 			children = (
 				D03A8C5522776FC600A8B39D /* StoryRating.swift */,
-				D03A8C5722776FD200A8B39D /* StoryStream.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D03A8C8022777B9500A8B39D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D03A8C8422777BA500A8B39D /* NeedleFoundation.framework */,
+				D03A8C8522777BA500A8B39D /* RIBs.framework */,
+				D03A8C8322777BA500A8B39D /* RxCocoa.framework */,
+				D03A8C8122777BA500A8B39D /* RxSwift.framework */,
+				D03A8C8222777BA500A8B39D /* SnapKit.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +352,7 @@
 				D03A8BF72277578C00A8B39D /* Sources */,
 				D03A8BF82277578C00A8B39D /* Frameworks */,
 				D03A8BF92277578C00A8B39D /* Resources */,
+				D03A8C9522777BB700A8B39D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,13 +417,12 @@
 				D03A8C4B2277664E00A8B39D /* HomeViewController.swift in Sources */,
 				D03A8C742277761B00A8B39D /* LoggedInActionableItem.swift in Sources */,
 				D03A8C6E2277761600A8B39D /* LoggedOutInteractor.swift in Sources */,
-				D03A8C7E2277762C00A8B39D /* RandomStoryAdapter.swift in Sources */,
-				D03A8C652277761000A8B39D /* StoryBookInteractor.swift in Sources */,
+				D03A8C652277761000A8B39D /* StoryInteractor.swift in Sources */,
 				D03A8C6D2277761600A8B39D /* LoggedOutComponent.swift in Sources */,
 				D03A8C6C2277761600A8B39D /* LoggedOutBuilder.swift in Sources */,
 				D03A8C702277761600A8B39D /* LoggedOutViewController.swift in Sources */,
 				D03A8C2322775ACD00A8B39D /* RootRouter.swift in Sources */,
-				D03A8C642277761000A8B39D /* StoryBookComponent.swift in Sources */,
+				D03A8C642277761000A8B39D /* StoryComponent.swift in Sources */,
 				D03A8C3F2277625300A8B39D /* RootComponent.swift in Sources */,
 				D03A8C2122775ACD00A8B39D /* RootInteractor.swift in Sources */,
 				D03A8C4D2277664E00A8B39D /* HomeRouter.swift in Sources */,
@@ -389,23 +431,21 @@
 				D03A8C3C227761A200A8B39D /* RootActionableItem.swift in Sources */,
 				D03A8C7B2277762000A8B39D /* LoggedInRouter.swift in Sources */,
 				D03A8C2022775ACD00A8B39D /* RootComponent+LoggedOut.swift in Sources */,
-				D03A8C5822776FD200A8B39D /* StoryStream.swift in Sources */,
 				D03A8C142277599900A8B39D /* UrlHandler.swift in Sources */,
 				D03A8C4C2277664E00A8B39D /* HomeBuilder.swift in Sources */,
 				D03A8C2222775ACD00A8B39D /* RootComponent+LoggedIn.swift in Sources */,
-				D03A8C732277761900A8B39D /* LoggedInComponent+RandomStory.swift in Sources */,
 				D03A8C2522775ACD00A8B39D /* RootBuilder.swift in Sources */,
 				D03A8C7A2277762000A8B39D /* LoggedInInteractor.swift in Sources */,
 				D03A8C7F2277763900A8B39D /* LaunchStoryWorkflow.swift in Sources */,
 				D03A8C712277761900A8B39D /* LoggedInComponent+Home.swift in Sources */,
 				D03A8C792277762000A8B39D /* LoggedInComponent.swift in Sources */,
-				D03A8C662277761000A8B39D /* StoryBookRouter.swift in Sources */,
+				D03A8C662277761000A8B39D /* StoryRouter.swift in Sources */,
 				D03A8BFF2277578C00A8B39D /* AppDelegate.swift in Sources */,
 				D03A8C6F2277761600A8B39D /* LoggedOutRouter.swift in Sources */,
-				D03A8C672277761000A8B39D /* StoryBookViewController.swift in Sources */,
+				D03A8C672277761000A8B39D /* StoryViewController.swift in Sources */,
 				D03A8C7D2277762C00A8B39D /* StoryAdapter.swift in Sources */,
 				D03A8C722277761900A8B39D /* LoggedInComponent+Story.swift in Sources */,
-				D03A8C632277761000A8B39D /* StoryBookBuilder.swift in Sources */,
+				D03A8C632277761000A8B39D /* StoryBuilder.swift in Sources */,
 				D03A8C4A2277664E00A8B39D /* HomeInteractor.swift in Sources */,
 				D03A8C11227758FE00A8B39D /* AppComponent.swift in Sources */,
 				D03A8C7C2277762C00A8B39D /* Story.swift in Sources */,
@@ -548,6 +588,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU9GKRD8PL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Story/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -566,6 +610,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU9GKRD8PL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Story/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
