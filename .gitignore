@@ -1,0 +1,15 @@
+.DS_Store
+Carthage
+Carthage/Build
+Cartfile.resolved
+.build/
+Pods/
+build/
+build_products*/
+Artifacts/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+xcuserdata/
+*.xcuserstate
+*.dSYM
