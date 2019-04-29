@@ -1,0 +1,4 @@
+github "ReactiveX/RxSwift" "4.5.0"
+github "SnapKit/SnapKit" "4.2.0"
+github "makegoodstuff/RIBs" "678c0687bde71ff870e50cd5197deacdc8aac7c2"
+github "uber/needle" "v0.9.1"
