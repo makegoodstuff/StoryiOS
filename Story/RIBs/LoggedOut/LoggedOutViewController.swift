@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 import SnapKit
 import UIKit
+import StoryFramework
 
 // MARK: PresentableListener
 
@@ -23,6 +24,7 @@ protocol LoggedOutPresentableListener: class {
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
     weak var listener: LoggedOutPresentableListener?
     private let disposeBag = DisposeBag()
+    private let languageFacts = LanguageFactRepository().fetchLanguageFacts()
 
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -42,6 +44,8 @@ private extension LoggedOutViewController {
         view.backgroundColor = UIColor.white
         let userField = buildUserField()
         buildLoginButton(userField: userField)
+
+
     }
 
     func setupLayout() {}
